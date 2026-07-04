@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: taller
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/taller_db
+
+server:
+  port: 8080

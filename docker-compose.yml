@@ -1,0 +1,16 @@
+name: tallerdb
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: tallerdb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - taller_mongo_data:/data/db
+
+volumes:
+  taller_mongo_data:
+    name: taller_taller_mongo_data
+    external: true
