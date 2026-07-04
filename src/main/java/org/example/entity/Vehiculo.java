@@ -44,5 +44,5 @@ public class Vehiculo {
     private Integer tiempoDias;
 
     @PositiveOrZero(message = "El costo no puede ser negativo")
-    private BigDecimal costo; 
+    private BigDecimal costo;
 }
